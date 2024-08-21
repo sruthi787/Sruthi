@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Seeking Registration Form</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+            background-color: #e0f7fa;
+        }
+        .registration-form {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            width: 800px;
+            text-align: center;
+        }
+        .registration-form h2 {
+            margin-bottom: 20px;
+        }
+        .registration-form input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .registration-form button {
+            width: 100%;
+            padding: 10px;
+            background-color: #1d1074;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .registration-form button:hover {
+            background-color: #004d40;
+        }
+    </style>
+</head>
+<body>
+    <div class="registration-form">
+        <h2>Job Seeker Registration</h2>
+        <form action="/submit_job_registration" method="post">
+            <input type="text" name="full_name" placeholder="Full Name" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <input type="text" name="phone_number" placeholder="Phone Number" required>
+            <input type="text" name="skills" placeholder="Skills" required>
+            <button type="submit">Register</button>
+        </form>
+    </div>
+</body>
+</html>

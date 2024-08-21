@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Student Registration Form</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+       
+    </style>
+</head>
+<body>
+    <h1>MOHAN BABU UNIVERSITY</h1>
+    <form action="/submit_registration" method="post" enctype="multipart/form-data">
+        <!-- Personal Information -->
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName" required><br><br>
+
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName" required><br><br>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required><br><br>
+
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender" required>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select><br><br>
+
+            <label for="aadharNumber">Aadhar Number (if applicable):</label>
+            <input type="text" id="aadharNumber" name="aadharNumber"><br><br>
+
+            <label for="photoUpload">Photo Upload:</label>
+            <input type="file" id="photoUpload" name="photoUpload" accept="image/*" required><br><br>
+        </fieldset>
+
+        <!-- Contact Information -->
+        <fieldset>
+            <legend>Contact Information</legend>
+            <label for="permanentAddress">Permanent Address:</label><br>
+            <textarea id="permanentAddress" name="permanentAddress" rows="4" cols="50" required></textarea><br><br>
+
+            <label for="currentAddress">Current Address (if different):</label><br>
+            <textarea id="currentAddress" name="currentAddress" rows="4" cols="50"></textarea><br><br>
+
+            <label for="phoneNumber">Phone Number:</label>
+            <input type="tel" id="phoneNumber" name="phoneNumber" required><br><br>
+
+            <label for="emailAddress">Email Address:</label>
+            <input type="email" id="emailAddress" name="emailAddress" required><br><br>
+
+            <label for="emergencyContactName">Emergency Contact Name:</label>
+            <input type="text" id="emergencyContactName" name="emergencyContactName" required><br><br>
+        </fieldset>
+
+        <!-- Academic Information -->
+        <fieldset>
+            <legend>Academic</legend>
+            <label for="highSchoolName">High School Name:</label>
+            <input type="text" id="highSchoolName" name="highSchoolName" required><br><br>
+
+            <label for="highSchoolGradYear">High School Graduation Year:</label>
+            <input type="number" id="highSchoolGradYear" name="highSchoolGradYear" required><br><br>
+
+            <label for="highSchoolGPA">High School GPA:</label>
+            <input type="text" id="highSchoolGPA" name="highSchoolGPA" required><br><br>
+
+            <label for="collegeGradYear">Year of Graduation:</label>
+            <input type="number" id="collegeGradYear" name="collegeGradYear"><br><br>
+        </fieldset>
+        <!-- Financial Information -->
+        <fieldset>
+            <legend> Information</legend>
+            <label for="financialAid">Financial Aid Required:</label>
+            <select id="financialAid" name="financialAid" required>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select><br><br>
+
+            <label for="scholarships">Scholarships Applied For:</label><br>
+            <textarea id="scholarships" name="scholarships" rows="4" cols="50"></textarea><br><br>
+
+            <label for="parentGuardianName">Parent Name:</label><br><br>
+           <div>
+            Mother Name:<input type="text" name="Mother name" id="Mother name">
+           Father Name: <input type="text" name="FATHER name" id="FATHER name">
+           </div><br>
+
+            <label for="parentGuardianName">Parent/Guardian Name:</label>
+            <input type="text" id="parentGuardianName" name="parentGuardianName" required><br><br>
+
+            <label for="parentGuardianOccupation">Parent/Guardian Occupation:</label>
+            <input type="text" id="parentGuardianOccupation" name="parentGuardianOccupation" required><br><br>
+
+            <label for="parentGuardianIncome">Parent/Guardian Annual Income:</label>
+            <input type="number" id="parentGuardianIncome" name="parentGuardianIncome" required><br><br>
+        </fieldset>

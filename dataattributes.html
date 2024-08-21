@@ -1,0 +1,36 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Data Attributes</title>
+    <style>
+        body {
+            background-color: rgb(179, 235, 204);
+            font-family: cursive;
+            margin: 20%;
+            padding: 0%;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Instagram ID's and their Original Names:</h1>
+        <p>click on the title name to know the hero</p>
+        <ul>
+            <li onclick="favouriteHero(this)" data-favourite-hero="thedevarakonda">vijay DevaraKonda</li>
+            <li onclick="favouriteHero(this)" data-favourite-hero="siddu-buoy">siddu</li>
+            <li onclick="favouriteHero(this)" data-favourite-hero="PawanKalyan">power star</li>
+            <li onclick="favouriteHero(this)" data-favourite-hero="actorvijay">vijay</li>
+            <li onclick="favouriteHero(this)" data-favourite-hero="ram_pothineni">Ram</li>
+        </ul>
+        <script>
+            function favouriteHero(element) {
+                var hero = element.getAttribute("data-favourite-hero");
+                alert(hero);
+            }
+        </script>
+    </div>
+</body>
+</html>
